@@ -1,0 +1,49 @@
+escola = 1.487,50
+
+agua = 114,67
+
+luz = 70,71
+
+internet = 108,00
+
+emprestimo = 144,07
+
+cartão = parcelar e quitar em  maio
+
+curso = 157,00
+
+iptu = 66,00
+
+
+
+
+saldo = 2.189,67
+
+total = 2.147,95
+
+resta = 41,72
+
+valor a receber = 300,00
+
+pis/maio - dia 15 = 1.518,00 (quitar iptu 2025 / cartão / adiantar emprestimo)
+
+
+					Projeção 							
+
+
+
+                                                        escola =  1.487,50
+                                                        iptu = 66,00   
+                                                        curso = 161,61
+                                                        emprestimo = 144,07
+                                                        agua = 75,12
+                                                        luz = 87,30
+                                                        cartão = 586,89   
+							padaria = 197,00 
+							show = 396,00
+
+
+Saldo =  889,00
+
+
+                                                     
