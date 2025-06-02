@@ -151,12 +151,12 @@ strong{
     color: var(--white);
 }
 
-box-img-main{
+.box-img-main {
     max-width: 150px;
     padding: 1rem; 
 }
 
-.imagem-profissional{
+.imagem-profissional {
     border-radius: 50%;
 }
 
