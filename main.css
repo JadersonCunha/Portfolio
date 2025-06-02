@@ -157,7 +157,7 @@ strong{
 }
 
 .imagem-profissional {
-    border-radius: 50%;
+    border-radius: 35px;
 }
 
 :is(.quem-sou-eu, .imagem-profissional){
