@@ -47,16 +47,21 @@ header{
     min-height: 50px;
 }
 
-.box-img-header{
-    height: 100%;
+.box-img-header {
+    max-width: 120px;
+    width: auto; /* Alterado de 100% para auto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.img-log{
-    max-width: 90px;
+.img-log {
     width: 100%;
-    height: auto;
+    max-width: 120px;
+    height: auto !important; /* Garante proporção */
     border-radius: 10px;
     display: block;
+    object-fit: contain; /* Garante que a imagem não estique */
 }
 
 .nav{
@@ -330,8 +335,14 @@ footer > div{
         font-size: 1.2rem;
         letter-spacing: 2px;
     }
+    .box-img-header {
+        max-width: 70px;
+        width: auto; /* Garante que não estique */
+    }
     .img-log {
-        max-width: 50px;
+        max-width: 70px;
+        width: 100%;
+        height: auto !important;
     }
     .box-img-main {
         max-width: 70px;
