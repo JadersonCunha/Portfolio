@@ -15,12 +15,13 @@
             </a>
         </div>
 
-        <nav>
-          <a href="#experiences">Experiências</a>
-          <a href="#quem-sou-eu">Quem sou eu</a> 
-          <a href="#meus-projetos">Meus Projetos</a>   
-          <a href="#contact">Contatos</a> 
-        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+<nav class="nav" id="nav-menu">
+  <a href="#experiences">Experiências</a>
+  <a href="#quem-sou-eu">Quem sou eu</a> 
+  <a href="#meus-projetos">Meus Projetos</a>   
+  <a href="#contact">Contatos</a> 
+</nav>
         <div class="box-btn-actions">
             <a href="CV_JADERSON_CUNHA.pdf" download>
             <button  class="btn-action">Download meu curriculo</button>
@@ -120,6 +121,14 @@
 
          </div>       
     </footer>
-</body>
+
 <script src="main.js"></script>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});
+</script>
+</body>
 </html>
