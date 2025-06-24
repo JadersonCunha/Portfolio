@@ -393,6 +393,23 @@ footer > div{
     }
 }
 
+/* Esconde o botão do menu sanduíche em telas grandes */
+.menu-curriculo {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-curriculo {
+        display: block;
+        width: 90%;
+        margin: 0.5rem auto 0 auto;
+        text-align: center;
+    }
+    .box-btn-actions {
+        display: none;
+    }
+}
+
 
 
 
