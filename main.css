@@ -410,6 +410,24 @@ footer > div{
     }
 }
 
+/* Esconde o botão Saiba mais do menu sanduíche em telas grandes */
+.menu-saiba-mais {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-saiba-mais {
+        display: block;
+        width: 90%;
+        margin: 0.5rem auto 0 auto;
+        text-align: center;
+    }
+    /* Se existir um botão Saiba mais fora do menu, esconda em telas pequenas */
+    .box-btn-actions .saiba-mais {
+        display: none;
+    }
+}
+
 
 
 
