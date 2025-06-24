@@ -428,6 +428,12 @@ footer > div{
     }
 }
 
+@media (max-width: 768px) {
+    .saiba-mais-out {
+        display: none !important;
+    }
+}
+
 
 
 
