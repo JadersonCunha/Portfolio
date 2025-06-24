@@ -199,19 +199,7 @@ strong{
     color: #00ff00; /* verde */
 }
 
-.second-section ul li{
-    color: var(--dark4);
-    letter-spacing: 2px;
-    font-weight: bold;
 
-
-}
-
-.second-section ul li:hover{
-    color: var(--dark5);
-    transition: .4s;
-    cursor: default;
-}
 
 .title{
     color: var(--dark5);
