@@ -189,6 +189,16 @@ strong{
     flex-wrap: wrap;
 }
 
+.second-section ul li {
+    color: #fff; /* branco */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.second-section ul li:hover {
+    color: #00ff00; /* verde */
+}
+
 .second-section ul li{
     color: var(--dark4);
     letter-spacing: 2px;
@@ -261,11 +271,13 @@ footer > div{
 
 #minha-lista-de-projetos a{
     text-decoration: none;
-    color: var(--dark3);
+    color: #fff; /* branco */
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 #minha-lista-de-projetos a:hover{
-    color: var(--dark5);
+    color: #00ff00; /* verde */
     transition: .4s;
     cursor: default;
     cursor: pointer;
