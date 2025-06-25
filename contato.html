@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Jaderson Cunha</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="contato-main">
+        <h2>Envie uma mensagem</h2>
+        <form action="https://formsubmit.co/jadersoncunha@gmail.com" method="POST" class="contato-form">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="text" name="subject" placeholder="Assunto" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            <button type="submit" class="btn-action">Enviar</button>
+            <!-- Opcional: Redireciona para uma página de obrigado -->
+            <!-- <input type="hidden" name="_next" value="https://SEU_SITE/obrigado.html"> -->
+        </form>
+        <a href="index.html" class="contato-voltar">Voltar para o site</a>
+    </main>
+</body>
+</html>
