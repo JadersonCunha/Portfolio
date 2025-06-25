@@ -190,13 +190,38 @@ strong{
 }
 
 .second-section ul li {
-    color: #fff; /* branco */
     font-weight: bold;
-    transition: color 0.3s;
+    background: linear-gradient(
+        90deg,
+        #222 0%,
+        #888 10%,
+        #eee 20%,
+        #b0b0b0 30%,
+        #fff 40%,
+        #b0b0b0 50%,
+        #eee 60%,
+        #888 70%,
+        #fff 80%,
+        #888 90%,
+        #222 100%
+    );
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #222; /* tom escuro para ressaltar o efeito */
+    -webkit-text-fill-color: transparent;
+    animation: chrome-move 6s linear infinite;
+    transition: background-position 0.10s;
+    letter-spacing: 1px;
 }
 
-.second-section ul li:hover {
-    color: #00ff00; /* verde */
+@keyframes chrome-move {
+    0% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: -300% 0;
+    }
 }
 
 
