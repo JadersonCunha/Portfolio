@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Jaderson Cunha</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon"  sizes="512x512" href="logo-512.png">
+    <link rel="apple-touch-icon" href="logo-512.png">
+    <title>Projeto Social</title>
 </head>
 <body>
-
        <header>
         <div class="box-img-header">
             <a href="LOGO_TOPO.jpg" target="_blank">
@@ -28,20 +29,35 @@
         </div>
     </header>
 
-    <main class="contato-main">
-        <h2>Envie uma mensagem</h2>
-        <form action="https://formsubmit.co/jadersoncunha@gmail.com" method="POST" class="contato-form">
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <input type="text" name="subject" placeholder="Assunto" required>
-            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-            <button type="submit" class="btn-action">Enviar</button>
-            <!-- Opcional: Redireciona para uma página de obrigado -->
-            <!-- <input type="hidden" name="_next" value="https://SEU_SITE/obrigado.html"> -->
-        </form>
-
+    <main>
+        <h2 class="title" style="text-align:center; margin-top:2rem;">Projeto Social</h2>
+        <div class="carrossel-container">
+            <div class="carrossel" id="carrossel">
+                <a href="Básico em lógica de programação.pdf">
+                    <img src="Básico em lógica de programação_page-0001.jpg" alt="Básico em lógica de programação.pdf">
+                </a>
+                <a href="HTML5.pdf">
+                    <img src="HTML5_page-0001.jpg" alt="HTML5.pdf">
+                </a>
+                <a href="Projeto Apps.pdf">
+                    <img src="Projeto Apps_page-0001.jpg" alt="Projeto Apps.pdf">
+                </a>
+                <a href="PROJETO MUNDO DO TRABALHO.pdf">
+                    <img src="PROJETO MUNDO DO TRABALHO_page-0001.jpg" alt="PROJETO MUNDO DO TRABALHO.pdf">
+                </a>
+                <a href="Projeto Museu Virtual.pdf">
+                    <img src="Projeto Museu Virtual_page-0001.jpg" alt="Projeto Museu Virtual.pdf">
+                </a>
+            </div>
+            <div class="carrossel-legenda" id="carrossel-legenda"></div>
+            <div class="carrossel-botoes">
+                <button id="prev-btn">Anterior</button>
+                <button id="next-btn">Próximo</button>
+            </div>
+        </div>
         <a href="index.html" class="contato-voltar">Voltar para o site</a>
     </main>
+
     <footer>
         <div>
               
@@ -78,9 +94,11 @@
             </a>
 
          </div>       
-     <p style="text-align:center; color:#b0b0b0; margin-top:2rem;">
+        <p style="text-align:center; color:#b0b0b0; margin-top:10rem;">
             &copy; Jaderson Cunha - 2025
-         </p>
+        </p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -34,6 +34,8 @@
 body{
     background-color: var(--dark1);
     height: 100vh;
+    font-family: 'lato', Arial, sans-serif;
+    text-align: center;
 }
 
 header{
@@ -145,6 +147,7 @@ section{
 }
 
 h1{
+    font-family: 'lato', Arial, sans-serif;
     font-size: 2rem;
     color: var(--white);
     letter-spacing: 5px;
@@ -294,6 +297,32 @@ footer > div{
     transition: .4s;
     cursor: default;
     cursor: pointer;
+}
+
+/* Efeito cromo animado prata para títulos */
+.title {
+    background: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        #e0e0e0 15%,
+        #b0b0b0 30%,
+        #888888 45%,
+        #f5f5f5 60%,
+        #b0b0b0 75%,
+        #e0e0e0 90%,
+        #ffffff 100%
+    );
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: chrome-move 1.2s linear infinite;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@keyframes chrome-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 /* Esconde o botão em telas grandes */
@@ -522,6 +551,102 @@ footer > div{
     margin-top: 2rem;
     text-align: center;
     display: block;
+}
+
+.carrossel-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(74, 64, 64, 0.2);
+    background: #000000;
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+.carrossel a {
+    display: none;
+}
+.carrossel img {
+    width: 100%;
+    max-width: 650px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0006;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.carrossel-legenda {
+    color: #fff;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+    text-align: center;
+    min-height: 24px;
+}
+.carrossel-botoes {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.carrossel-botoes button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.carrossel-botoes button:hover {
+    background-color: var(--dark3);
+    border: 1px solid var(--dark3); 
+}
+@media (max-width: 700px) {
+    .carrossel img { height: 120px; max-width: 90vw; }
+    .carrossel-container { padding: 1rem 0.2rem; }
+}
+
+ body { font-family: 'Lato' , Arial, sans-serif; text-align: center; }
+    #pdf-viewer { width: 80vw; height: 80vh; border: 1px solid #ccc; margin-bottom: 10px; }
+    #file-name { margin: 10px 0; font-weight: bold; }
+    button { padding: 8px 16px; margin: 0 10px; }
+
+/* h2 padrão sem efeito cromo */
+h2 {
+    font-family: 'lato', Arial, sans-serif;
+    font-size: 2rem;
+    color: var(--dark5); /* mesma cor do .title */
+    font-weight:lighter;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+    font-family: 'lato', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Adicione ou ajuste no seu main.css */
+.cabecalho-centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10vh;
+}
+.cabecalho-centralizado h1,
+.cabecalho-centralizado h2 {
+    margin: 0;
 }
 
 
